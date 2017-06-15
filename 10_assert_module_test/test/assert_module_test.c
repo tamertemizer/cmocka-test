@@ -50,5 +50,6 @@ int main(void) {
         cmocka_unit_test(increment_value_assert),
         cmocka_unit_test(decrement_value_fail),
     };
+    cmocka_set_message_output(CM_OUTPUT_XML);
     return cmocka_run_group_tests(tests, NULL, NULL);
 }
